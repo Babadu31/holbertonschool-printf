@@ -148,6 +148,22 @@ i
 
 # la base printf
 
+| Format | Type | Description                                    | Example   |   |
+|--------|------|------------------------------------------------|-----------|---|
+| %c     |      | prints a character                             | a G ? +   |   |
+| %s     |      | prints a string                                | Bonjour ! |   |
+| %%     |      | prints a %                                     |           |   |
+| %d     | int  | An integer data                                |           |   |
+| %X     | int  | Print an int in hexadecimal                    | 9A0F      |   |
+| %i     |      | prints an integer                              |           |   |
+| %o     |      |                                                |           |   |
+| %b     |      |                                                |           |   |
+| %x     |      |                                                |           |   |
+| %u     |      |                                                |           |   |
+| %p     |      | prints an address, given by a pointer variable |           |   |
+| %r     |      |                                                |           |   |
+| %R     |      |                                                |           |   |
+
 
 # création _printf
 
