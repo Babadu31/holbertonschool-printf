@@ -161,10 +161,11 @@ Handle the following conversion specifiers:
 
 * Description of the file structure
 
-FileName                          Description 
-
-main.h                 This file is the header file.
-_putchar.c            This file contains the _putchar functions
+| File name | Description |  |  |  |
+|---|---|---|---|---|
+| main.h | This file is the header file. |  |  |  |
+| _putchar.c | This file contains the _putchar functions |  |  |  |
+|  |  |  |  |  |
 
 * Quick description of each function by file
 
