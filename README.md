@@ -148,21 +148,16 @@ i
 
 # la base printf
 
-| Format | Type | Description                                    | Example   |   |
-|--------|------|------------------------------------------------|-----------|---|
-| %c     |      | prints a character                             | a G ? +   |   |
-| %s     |      | prints a string                                | Bonjour ! |   |
-| %%     |      | prints a %                                     |           |   |
-| %d     | int  | An integer data                                |           |   |
-| %X     | int  | Print an int in hexadecimal                    | 9A0F      |   |
-| %i     |      | prints an integer                              |           |   |
-| %o     |      |                                                |           |   |
-| %b     |      |                                                |           |   |
-| %x     |      |                                                |           |   |
-| %u     |      |                                                |           |   |
-| %p     |      | prints an address, given by a pointer variable |           |   |
-| %r     |      |                                                |           |   |
-| %R     |      |                                                |           |   |
+| Format | Type                  | Description                                                                                                                    | Example             |
+|--------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| %c     | char                  | Smallest addressable unit of a machine, it can contain the basic characters. It is an integer value that can be signed or not. | a G ? +             |
+| %c     | signed char           | Signed char type                                                                                                               | [−127; +127]        |
+| %c     | unsigned char         | Unsigned char type                                                                                                             | [0; 255]            |
+| %s     |                       | String of characters                                                                                                           | Bonjour !           |
+| %%     |                       | A % followed by another % character will write a single % to the stream                                                        | %                   |
+| %d     | int signed signed int | Type entier standard, signé                                                                                                    | [−32 767 ; +32 767] |
+| %X     | signed                | Print an int in hexadecimal                                                                                                    | 9A0F                |
+| %i     | int signed signed int | Type entier standard, signé                                                                                                    | [−32 767 ; +32 767] |
 
 
 # création _printf
