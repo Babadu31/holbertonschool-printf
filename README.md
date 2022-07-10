@@ -4,17 +4,31 @@
 
 # Summary
 
-### Project presentation
-### Requirements
-### Printf
-### _Printf
-### Sources
-### Man 
+## 1-Project presentation
+### General
+### Compilation
+### test file (1)
+### Commande
+### Results
+## 2-Requirements
+## 3-Question
+### 0.I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+### 1.Education is when you read the fine print. Experience is what you get if you don't
+## 4-Printf
+### example
+## 5-_Printf
+### Description of the file structure
+### Quick description of each function by file
+### test file char (2)
+### test file char & string (3)
+### test file char & string & percent (4)
+## 6-Sources
+## 7-Man 
 
-# Project presentation
+# 1-Project presentation
 
 
-# Requirements
+# 2-Requirements
 
 ## General
 - Allowed editors: vi, vim, emacs
@@ -120,7 +134,7 @@ Unknown:[%r]
 Unknown:[%r]
 ```
 
-# Questions
+# 3-Questions
 ## I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 Write a function that produces output according to a format
 - Prototype: int _printf(const char *format, ...);
@@ -128,9 +142,11 @@ Write a function that produces output according to a format
 - write output to stdout, the standard output stream
 - format is a character string. The format string is composed of zero or more directives. See man 3 printf for more detail. You need to handle the 
 following conversion specifiers:
-c
-s
-%
+> c
+
+> s
+
+> %
 - You don’t have to reproduce the buffer handling of the C library printf function
 - You don’t have to handle the flag characters
 - You don’t have to handle field width
@@ -139,14 +155,15 @@ s
 
 ## Education is when you read the fine print. Experience is what you get if you don't
 Handle the following conversion specifiers:
-d
-i
+> d
+
+> i
 - You don’t have to handle the flag characters
 - You don’t have to handle field width
 - You don’t have to handle precision
 - You don’t have to handle the length modifiers
 
-# la base printf
+# 4-printf
 
 | Format | Type                  | Description                                                                                                                    | Example             |
 |--------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -155,12 +172,12 @@ i
 | %c     | unsigned char         | Unsigned char type                                                                                                             | [0; 255]            |
 | %s     |                       | String of characters                                                                                                           | Bonjour !           |
 | %%     |                       | A % followed by another % character will write a single % to the stream                                                        | %                   |
-| %d     | int signed signed int | Type entier standard, signé                                                                                                    | [−32 767 ; +32 767] |
+| %d     | int signed signed int | Standard integer type, signed                                                                                                    | [−32 767 ; +32 767] |
 | %X     | signed                | Print an int in hexadecimal                                                                                                    | 9A0F                |
-| %i     | int signed signed int | Type entier standard, signé                                                                                                    | [−32 767 ; +32 767] |
+| %i     | int signed signed int | Standard integer type, signed                                                                                                    | [−32 767 ; +32 767] |
 
 
-# création _printf
+# 5-_printf
 
 ## Description of the file structure
 
@@ -178,14 +195,14 @@ i
 |            |              |                     |   |   |
 |            |              |                     |   |   |                   
  
-# Sources
+# 6-Sources
 
 * Secrets of printf (pdf)
 https://www.cypress.com/file/54761/download
 
 * Flowcharts and diagram (organigrammes et diagrammes)
 
-# man
+# 7-man
 
 - printf
 https://man7.org/linux/man-pages/man3/printf.3.html
