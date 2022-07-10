@@ -22,6 +22,7 @@
 ### test file char & string & percent (4)
 ## 6-Sources
 ## 7-Man 
+## 8-Tools
 
 # 1-Project presentation
 
@@ -304,9 +305,21 @@ https://www.cypress.com/file/54761/download
 
 * Flowcharts and diagram (organigrammes et diagrammes)
 
+* Display using the printf function
+https://public.iutenligne.net/informatique/algorithme-et-programmation/priou/LangageC/61_affichage__laide_de_la_fonction_printf.html
+
+* printf
+https://cplusplus.com/reference/cstdio/printf/?kw=printf
+
+* fprintf, printf and sprintf functions
+https://koor.fr/C/cstdio/fprintf.wp
+
+* Format Specification Syntax: printfwprintf Functions
+https://docs.microsoft.com/fr-fr/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170
+
 # 7-man
 
-- printf
+* printf
 https://man7.org/linux/man-pages/man3/printf.3.html
 
 * write
@@ -330,8 +343,31 @@ https://linux.die.net/man/3/va_copy
 * va_arg
 https://linux.die.net/man/3/va_arg
 
+* return
+https://docs.microsoft.com/fr-fr/cpp/c-language/return-statement-c?view=msvc-170
+
+* continue
+https://docs.microsoft.com/fr-fr/cpp/c-language/continue-statement-c?view=msvc-170
+
+* operators
+https://www.programiz.com/c-programming/c-operators
+
+* strlen
+https://koor.fr/C/cstring/strlen.wp
+
+
+# 8-Tools
+
+* Replit (testing machine)
+https://replit.com/
+
+* Pythontutor (decomposing machine)
+https://pythontutor.com/
+
 
 
 ![Alt Text](https://c.tenor.com/pagVxAkHfWAAAAAC/my-job-here-is-done-bye.gif)
+
+
 
 sources mandatory + advanced without getting caught by the school : https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab
