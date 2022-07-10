@@ -1,9 +1,7 @@
+# _printfproject
 ![Alt Text](https://c.tenor.com/jgUVViyS2CYAAAAC/now-old.gif)
 
-# Intro
-
 # Summary
-
 ## 1-Project presentation
 ### General
 ### Compilation
@@ -181,20 +179,80 @@ Handle the following conversion specifiers:
 
 ## Description of the file structure
 
-| File name  | Description                               |   |   |   |
-|------------|-------------------------------------------|---|---|---|
-| main.h     | This file is the header file              |   |   |   |
-| _putchar.c | This file contains the _putchar functions |   |   |   |
-|            |                                           |   |   |   |
+| File name | Description                  |
+|-----------|------------------------------|
+| main.h    | This file is the header file |
 
 ## Quick description of each function by file
 
-| File name  | FunctionName | FunctionDescription |   |   |
-|------------|--------------|---------------------|---|---|
-| _putchar.c | _putchar     |                     |   |   |
-|            |              |                     |   |   |
-|            |              |                     |   |   |                   
- 
+| File name | FunctionName | FunctionDescription |
+|-----------|--------------|---------------------|
+|           |              |                     |   
+
+## test file char (2)
+
+```
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
+
+_printf("Character:[%c]\n", 'H');
+    printf("Character:[%c]\n", 'H');
+}
+```
+
+## test file char & string (3)
+
+```
+/**
+ * main - Entry point
+ * Return: Always 0
+ */
+int main(void)
+{
+    int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
+
+_printf("Character:[%c]\n", 'H');
+    printf("Character:[%c]\n", 'H');
+  _printf("String:[%s]\n", "I am a string !");
+    printf("String:[%s]\n", "I am a string !");
+}
+```
+
+## test file char & string & percent (4)
+
+``` 
+/**
+ * main - Entry point
+ * Return: Always 0
+ */
+int main(void)
+{
+    int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
+
+_printf("Character:[%c]\n", 'H');
+    printf("Character:[%c]\n", 'H');
+  _printf("String:[%s]\n", "I am a string !");
+    printf("String:[%s]\n", "I am a string !");
+      len = _printf("Percent:[%%]\n");
+    len2 = printf("Percent:[%%]\n");
+}
+```
+
 # 6-Sources
 
 * Secrets of printf (pdf)
@@ -227,3 +285,6 @@ https://linux.die.net/man/3/va_copy
 
 * va_arg
 https://linux.die.net/man/3/va_arg
+
+
+![Alt Text](https://c.tenor.com/pagVxAkHfWAAAAAC/my-job-here-is-done-bye.gif)
