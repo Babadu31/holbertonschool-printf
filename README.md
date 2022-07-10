@@ -163,6 +163,21 @@ Handle the following conversion specifiers:
 
 # 4-printf
 
+The printf function is used to display on the screen window a text that follows a format defined by the programmer. Its general syntax is:
+```
+printf("format", arg_1, arg_2, ..., arg_n) ;
+```
+where format represents a character string (placed between quotes "") which contains:
+
+– text to be printed as is;
+
+– format specifications (as many as arg_i parameters ) which indicate how to display the variables arg_1, ..., arg_n provided as parameters. These are format codes .
+Each format code begins with the % symbol followed by one (or two) letter(s) indicating the display format of the corresponding arg_i parameter (the one with the same rank in the list of arguments). The value of arg_i will replace its format code when displayed.
+
+The letter placed after the % symbol in the format code indicates the type of parameter associated with the format code (see table on next page). In the previous example, %lf (and its variants like %8.2lf) is the format code associated with a double.
+
+printf parameters can be variables, constants, expressions to be calculated before displaying.
+
 | Format | Type                  | Description                                                                                                                    | Example             |
 |--------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | %c     | char                  | Smallest addressable unit of a machine, it can contain the basic characters. It is an integer value that can be signed or not. | a G ? +             |
@@ -174,6 +189,35 @@ Handle the following conversion specifiers:
 | %X     | signed                | Print an int in hexadecimal                                                                                                    | 9A0F                |
 | %i     | int signed signed int | Standard integer type, signed                                                                                                    | [−32 767 ; +32 767] |
 
+## Example
+```
+/* printf example */
+#include <stdio.h>
+
+int main()
+{
+   printf ("Characters: %c %c \n", 'a', 65);
+   printf ("Decimals: %d %ld\n", 1977, 650000L);
+   printf ("Preceding with blanks: %10d \n", 1977);
+   printf ("Preceding with zeros: %010d \n", 1977);
+   printf ("Some different radices: %d %x %o %#x %#o \n", 100, 100, 100, 100, 100);
+   printf ("floats: %4.2f %+.0e %E \n", 3.1416, 3.1416, 3.1416);
+   printf ("Width trick: %*d \n", 5, 10);
+   printf ("%s \n", "A string");
+   return 0;
+}
+```
+Output:
+```
+Characters: a A
+Decimals: 1977 650000
+Preceding with blanks:       1977
+Preceding with zeros: 0000001977
+Some different radices: 100 64 144 0x64 0144
+floats: 3.14 +3e+000 3.141600E+000
+Width trick:    10
+A string
+```
 
 # 5-_printf
 
@@ -287,4 +331,7 @@ https://linux.die.net/man/3/va_copy
 https://linux.die.net/man/3/va_arg
 
 
+
 ![Alt Text](https://c.tenor.com/pagVxAkHfWAAAAAC/my-job-here-is-done-bye.gif)
+
+sources mandatory + advanced without getting caught by the school : https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab
