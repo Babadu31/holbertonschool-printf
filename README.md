@@ -26,6 +26,8 @@
 
 # 1-Project presentation
 
+student at holberton school we were offered to create a function similar to printf but would be written. To summarize we must reproduce the same results as printf but with a new function which will be called _printf. first we will explain the conditions for success, then a reminder of the printf function. Finally we will show how we arrived at the expected result for each parameter.
+
 
 # 2-Requirements
 
