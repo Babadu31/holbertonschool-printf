@@ -1,11 +1,11 @@
 .TH man_printf.sh 1
 .SH NAME
-_printf
+_printf - format and print data but with an extra underscore
 .SH SYNOPSIS
 int _printf(const char *format, ...);
+_printf FORMAT [ARGUMENT]...
 .SH DESCRIPTION
-.B _printf.sh
-the _printf function has the same objectives as the printf function
+the _printf function has the same objectives as the printf function. FORMAT controls the output as in C printf.  Interpreted sequences are:
 .SH OPTIONS
 .TP
 .BR c
@@ -16,3 +16,7 @@ Print string
 .TP
 .BR %
 Print %
+.SH AUTHOR
+Written by MISSUD Bastien and BELKHIRI Myriam
+.SH SEE ALSO
+printf(3)
