@@ -17,6 +17,14 @@
 ## 5-_Printf
 #### Description of the file structure
 #### Quick description of each function by file
+### Reminder
+#### Structure
+#### Prototype
+#### example structure va_list
+#### Calculation operators
+#### Assignment Operators
+#### Comparison Operators
+#### Logical (Boolean) operators
 #### test file char (2)
 #### test file char & string (3)
 #### test file char & string & percent (4)
@@ -243,6 +251,106 @@ A string
 | function.c   | pstr         | returns a char (print char)                |
 | function.c   | pperc        | returns a percentage (print percent)       |
 | get_printf.c | get_printf   | get_printf to get function from function.c |  
+
+## Reminder 
+
+#### Structure
+![Alt Text](https://developpement-informatique.com/upload/3214f83949acca18adc584ec75f3505cd7ff9f6c.jpeg)
+
+#### Prototype
+```
+int printf(const char* format, ...);
+```
+The ... means that it is a variadic function, which can take a variable number of parameters.
+
+format represents, as its name suggests, what the output will be made of (Integer, Double...). Its principle is as follows: each time there is a %, printf looks at the letter following this % and writes the corresponding variable in the parameters. If it's the ith %, printf looks at the (th + 1) parameter.
+
+#### example structure va_list
+```
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int addition( int counter, ... ) {
+
+    int sum = 0;
+    va_list parametersInfos;
+    /* Initialize the va_list structure */
+    va_start( parametersInfos, counter );
+
+    /* for all unnamed integer, do an addition */
+    while( counter > 0 ) {
+
+        /* Extraction of the next integer */
+        sum += (int) va_arg( parametersInfos, int );
+
+        counter --;
+    }
+
+    /* Release va_list resources */
+    va_end( parametersInfos );
+
+    return sum;
+}
+
+int main( int argc, char * argv[] ) {
+
+    int result = addition( 2 /* counter */, 3, 11 );
+    printf( "addition( 2, 3, 11 ) == %d\n", result );     /* 14 */
+
+
+    result = addition( 3 /* counter */, 4, 5, 6 );
+    printf( "addition( 3, 4, 5, 6 ) == %d\n", result );   /* 15 */
+
+    return EXIT_SUCCESS;
+
+}
+```
+output : 
+```
+addition( 2, 3, 11 ) == 14
+addition( 3, 4, 5, 6 ) == 15
+```
+
+#### Calculation operators
+| Operator |       Denomination      |                   Effect                  | Example | Result (with integer x equal to 7) |
+|:--------:|:-----------------------:|:-----------------------------------------:|:-------:|:----------------------------------:|
+| +        | addition operator       | Add two values                            | x+3     | 10                                 |
+| -        | subtraction operator    | Subtract two values                       | x-3     | 4                                  |
+| *        | multiplication operator | Multiplies two values                     | x*3     | 21                                 |
+| /        | division operator       | Divides two values                        | x/3     | 2                                  |
+| %        | modulo operator         | Returns the remainder of integer division | x%3     | 1                                  |
+
+#### Assignment Operators
+| Operator | Effect                                                         |                   Effect                  | Example | Result (with integer x equal to 7) |
+|----------|----------------------------------------------------------------|:-----------------------------------------:|:-------:|:----------------------------------:|
+| =        | Assigns a value (right) to a variable (left)                   | Add two values                            | x+3     | 10                                 |
+| +=       | adds two values and stores the sum in the variable             | Subtract two values                       | x-3     | 4                                  |
+| -=       | subtracts two values and stores the difference in the variable | Multiplies two values                     | x*3     | 21                                 |
+| *=       | multiplies two values and stores the product in the variable   | Divides two values                        | x/3     | 2                                  |
+| /=       | divides two values and stores the quotient in the variable     | Returns the remainder of integer division | x%3     | 1                                  |
+| %=       | divides two values and stores the remainder in the variable    |                                           |         |                                    |
+
+#### Comparison Operators
+|                       Operator                       |         Denomination        |                           Effect                           | Example |                  Result (with x being 7)                  |
+|:----------------------------------------------------:|:---------------------------:|:----------------------------------------------------------:|:-------:|:---------------------------------------------------------:|
+| ==  Not to be confused with the assignment sign (=)! | equality operator           | Compare two values and check their equality                | x==3    | Returns 1 if x is equal to 3, otherwise 0                 |
+| <                                                    | strict inferiority operator | Checks that a variable is strictly less than a value       | x<3     | Returns 1 if x is less than 3, otherwise 0                |
+| <=                                                   | inferiority operator        | Checks that a variable is less than or equal to a value    | x<=3    | Returns 1 if x is less than or equal to 3, otherwise 0    |
+| >                                                    | strict superiority operator | Checks that a variable is strictly greater than a value    | x>3     | Returns 1 if x is greater than 3, otherwise 0             |
+| >=                                                   | superiority operator        | Checks that a variable is greater than or equal to a value | x>=3    | Returns 1 if x is greater than or equal to 3, otherwise 0 |
+| !=                                                   | difference operator         | Checks that a variable is different from a value           | x!=3    | Returns 1 if x is different from 3, otherwise 0           |
+
+#### Logical (Boolean) operators
+| Operator |         Denomination        |                                                    Effect                                                    |              Syntax              |                  Result (with x being 7)                  |
+|:--------:|:---------------------------:|:------------------------------------------------------------------------------------------------------------:|:--------------------------------:|:---------------------------------------------------------:|
+| \|\|     | logical OR                  | Verifies that one of the conditions is fulfilled                                                             | ((condition1) \|\| (condition2)) | Returns 1 if x is equal to 3, otherwise 0                 |
+| &&       | logical AND                 | Check that all conditions are met                                                                            | ((condition1) && (condition2))   | Returns 1 if x is less than 3, otherwise 0                |
+| !        | logical NOT                 | Inverts the state of a boolean variable (returns the value 1 if the variable is worth 0, 0 if it is worth 1) | !(condition)                     | Returns 1 if x is less than or equal to 3, otherwise 0    |
+| >        | strict superiority operator | Checks that a variable is strictly greater than a value                                                      | x>3                              | Returns 1 if x is greater than 3, otherwise 0             |
+| >=       | superiority operator        | Checks that a variable is greater than or equal to a value                                                   | x>=3                             | Returns 1 if x is greater than or equal to 3, otherwise 0 |
+| !=       | difference operator         | Checks that a variable is different from a value                                                             | x!=3                             | Returns 1 if x is different from 3, otherwise 0           |
+
 
 ## test file char (2)
 
