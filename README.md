@@ -3,28 +3,30 @@
 
 # Summary
 ## 1-Project presentation
-### General
-### Compilation
-### test file (1)
-### Commande
-### Results
+#### General
+#### Compilation
+#### test file (1)
+#### Commande
+#### Results
 ## 2-Requirements
 ## 3-Question
-### 0.I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
-### 1.Education is when you read the fine print. Experience is what you get if you don't
+#### 0.I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+#### 1.Education is when you read the fine print. Experience is what you get if you don't
 ## 4-Printf
-### example
+#### example
 ## 5-_Printf
-### Description of the file structure
-### Quick description of each function by file
-### test file char (2)
-### test file char & string (3)
-### test file char & string & percent (4)
+#### Description of the file structure
+#### Quick description of each function by file
+#### test file char (2)
+#### test file char & string (3)
+#### test file char & string & percent (4)
 ## 6-Sources
 ## 7-Man 
 ## 8-Tools
 
 # 1-Project presentation
+
+student at holberton school we were offered to create a function similar to printf but would be written. To summarize we must reproduce the same results as printf but with a new function which will be called _printf. first we will explain the conditions for success, then a reminder of the printf function. Finally we will show how we arrived at the expected result for each parameter.
 
 
 # 2-Requirements
@@ -224,15 +226,23 @@ A string
 
 ## Description of the file structure
 
-| File name | Description                  |
-|-----------|------------------------------|
-| main.h    | This file is the header file |
+| File name    | Description                                    |
+|--------------|------------------------------------------------|
+| _printf.c    | implements the new _printf.c function          |
+| function.c   | print settings                                 |
+| get_printf.c | get_printf to get function from function.c     |
+| main.c       | file used to test the function to check result |
+| main.h       | contains prototypes, libraries and structures  |
 
 ## Quick description of each function by file
 
-| File name | FunctionName | FunctionDescription |
-|-----------|--------------|---------------------|
-|           |              |                     |   
+| File name    | FunctionName | FunctionDescription                        |
+|--------------|--------------|--------------------------------------------|
+| _printf.c    | _printf      | made the new printf                        |
+| function.c   | pchar        | returns a char (print char)                |
+| function.c   | pstr         | returns a char (print char)                |
+| function.c   | pperc        | returns a percentage (print percent)       |
+| get_printf.c | get_printf   | get_printf to get function from function.c |  
 
 ## test file char (2)
 
@@ -371,3 +381,6 @@ https://pythontutor.com/
 
 
 sources mandatory + advanced without getting caught by the school : https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab
+
+
+author : MISSUD Bastien
