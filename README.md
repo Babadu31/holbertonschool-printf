@@ -226,15 +226,23 @@ A string
 
 ## Description of the file structure
 
-| File name | Description                  |
-|-----------|------------------------------|
-| main.h    | This file is the header file |
+| File name    | Description                                    |
+|--------------|------------------------------------------------|
+| _printf.c    | implements the new _printf.c function          |
+| function.c   | print settings                                 |
+| get_printf.c | get_printf to get function from function.c     |
+| main.c       | file used to test the function to check result |
+| main.h       | contains prototypes, libraries and structures  |
 
 ## Quick description of each function by file
 
-| File name | FunctionName | FunctionDescription |
-|-----------|--------------|---------------------|
-|           |              |                     |   
+| File name    | FunctionName | FunctionDescription                        |
+|--------------|--------------|--------------------------------------------|
+| _printf.c    | _printf      | made the new printf                        |
+| function.c   | pchar        | returns a char (print char)                |
+| function.c   | pstr         | returns a char (print char)                |
+| function.c   | pperc        | returns a percentage (print percent)       |
+| get_printf.c | get_printf   | get_printf to get function from function.c |  
 
 ## test file char (2)
 
