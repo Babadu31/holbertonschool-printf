@@ -501,4 +501,4 @@ https://pythontutor.com/
 sources mandatory + advanced without getting caught by the school : https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab
 
 
-author : MISSUD Bastien
+authors : MISSUD Bastien & BELKHIRI Myriam
