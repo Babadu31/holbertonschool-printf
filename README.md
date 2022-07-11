@@ -3,23 +3,23 @@
 
 # Summary
 ## 1-Project presentation
-### General
-### Compilation
-### test file (1)
-### Commande
-### Results
+#### General
+#### Compilation
+#### test file (1)
+#### Commande
+#### Results
 ## 2-Requirements
 ## 3-Question
-### 0.I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
-### 1.Education is when you read the fine print. Experience is what you get if you don't
+#### 0.I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+#### 1.Education is when you read the fine print. Experience is what you get if you don't
 ## 4-Printf
-### example
+#### example
 ## 5-_Printf
-### Description of the file structure
-### Quick description of each function by file
-### test file char (2)
-### test file char & string (3)
-### test file char & string & percent (4)
+#### Description of the file structure
+#### Quick description of each function by file
+#### test file char (2)
+#### test file char & string (3)
+#### test file char & string & percent (4)
 ## 6-Sources
 ## 7-Man 
 ## 8-Tools
