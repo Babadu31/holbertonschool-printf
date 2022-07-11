@@ -257,6 +257,16 @@ A string
 #### Structure
 ![Alt Text](https://developpement-informatique.com/upload/3214f83949acca18adc584ec75f3505cd7ff9f6c.jpeg)
 
+Each structure type variable has fields marked with unique names. However, the name of the fields is not enough to access them since they only have a context within the structured variable...
+To access the fields of a structure, we use the field operator (a simple period) placed between the name of the structured variable that we have defined and the name of the field:
+```
+Variable_Name.Field_Name;
+```
+
+#### Return
+In general the 0 is actually used to indicate that the execution of the function took place in the nominal case. Depending on the image set of the function programmers use positive or negative numbers to specify the type of error.
+For pointers it's the opposite. You return the pointer when everything is fine and NULL (so 0) when there is an error.
+
 #### Prototype
 ```
 int printf(const char* format, ...);
