@@ -5,15 +5,12 @@
  * @format: character string
  * Return: number of characters printed
  */
-
 int _printf(const char *format, ...)
 {
-
 int x = 0;
 int y = 0;
 int z = 0;
 va_list valst;
-
 if (format == NULL || (strlen(format) == 1 && format[0] == '%'))
 {
 return (-1);
